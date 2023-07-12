@@ -1,0 +1,107 @@
+.genplan {
+    display: flex;
+    min-height: calc(100vh - 200px);
+    .genplan-info {
+        width: 100%;
+        margin: 30px 0 30px 30px;
+        padding: 20px;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        .sold {
+            &:hover {
+                path {
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+    .build-info{
+        width: 650px;
+        max-height: 530px;
+        margin: 60px;
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &.outset-neomo{
+            border: 1px solid #e6920a;
+        }
+        .descriptions{
+            border-radius: 20px;
+            padding: 20px;
+            width: 300px;
+            height: 200px;
+        }
+        h2{
+            font-size: 22px;
+            font-weight: 700;
+            color: #e09b11;
+            padding: 20px;
+        }
+
+        h4{
+            text-align: center;
+            margin: 10px;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        #build-value,
+        #floors-value,
+        #flats-value,
+        #build-value,
+        #floor,#all,
+        #action,#free,
+        #sold  {
+            width: 200px;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+            border: 1px solid #e6920a;
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px;
+        }
+    }
+}
+
+.build {
+    cursor: pointer;
+    fill: #bdbddb;
+    stroke: #000000;
+    fill-opacity: 0.2;
+    stroke-opacity: 0;
+    stroke-width: 2px;
+    transition: .2s;
+
+    &:hover {
+        fill-opacity: 0.7;
+        stroke-opacity: 0.8;
+    }
+
+    &.active {
+        fill: #0055ff;
+    }
+
+}
+
+.build-1 {
+    fill: #FAD617;
+    stroke: #FAD617;
+}
+
+.build-2 {
+    fill: #6DFA17;
+    stroke: #6DFA17;
+}
+
+.build-3 {
+    fill: #17D1FA;
+    stroke: #17D1FA;
+}
+

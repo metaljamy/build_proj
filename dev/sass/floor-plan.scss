@@ -1,0 +1,73 @@
+.floor-plan-page {
+    @extend .genplan;
+    align-items: center;
+    justify-content: space-evenly;
+    .flat-item-box {
+        @extend .genplan-info;
+    }
+    .flat-info-box{
+        @extend .build-info;
+        .descriptions{
+            text-align: center;
+            font-size: 20px;
+            h4{
+                font-size: 20px;
+                opacity: 0.2;
+                margin: 0;
+            }
+        }
+        .flat-info-stat{
+            width: 100%;
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            h4{
+                padding: 5px;
+                color: orange;
+
+            }
+        }
+    }
+}
+
+.free-color{
+    font-size: 100px;
+    color: #33ff00;
+}
+
+.action-color{
+    font-size: 100px;
+    color: #0000ff;
+}
+
+.sold-color{
+    font-size: 100px;
+    color: #ff0000;
+}
+
+.flat-item {
+    @extend .build;
+    fill: #bae19a;
+    &:hover {
+        fill: #acea7a;
+        stroke: #6d9d3c;
+    }
+    &.action{
+        fill: #09b5ff;
+        stroke: #1d15ea;
+    }
+
+    &.active{
+        fill: #00ff0d;
+        stroke: #6d9d3c;
+    }
+
+    &.sold{
+        fill: #ff0909;
+        stroke: #df2920;
+        cursor: not-allowed;
+    }
+}
+

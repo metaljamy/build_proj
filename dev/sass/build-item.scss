@@ -1,0 +1,22 @@
+.build-item-page {
+    @extend .genplan;
+}
+.building-info {
+    @extend .genplan-info;
+}
+
+.floors-info{
+    width: 100%;
+    @extend .build-info;
+    span{
+        font-weight: 300;
+    }
+}
+
+.floor {
+    @extend .build;
+    &:hover {
+        fill: #FAD617;
+        stroke: #FAD617;
+    }
+}
